@@ -9,7 +9,7 @@ const Items = [
     name: "Future project!",
     link: "#",
     language: "Awesome",
-    description: "Coming later...",
+    description: "Coming soon...",
   },
 ];
 

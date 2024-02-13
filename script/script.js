@@ -1,4 +1,5 @@
 import items from "./items.js";
+import data from "./lang.js";
 
 // Circular cursor
 const cursor = document.querySelector(".cursor");
@@ -120,4 +121,44 @@ toggleBtn.addEventListener("click", function () {
     localStorageTheme: newTheme,
     systemSettingDark,
   });
+});
+
+// Changing EN/CZ language
+const headingFirst = document.querySelector(".heading-first");
+const headingSecond = document.querySelector(".heading-second");
+const projectHeading = document.querySelector(".projects__text");
+const footerHeading = document.querySelector(".footer__heading");
+const footerText = document.querySelector(".footer__text");
+const flagSpan = document.querySelector(".flag__btn span");
+
+// Replacing text
+const replaceText = function () {
+  headingFirst.textContent = "";
+  headingSecond.textContent = "";
+  projectHeading.textContent = "";
+  footerHeading.textContent = "";
+  footerText.textContent = "";
+
+  const attr = flagBtn.getAttribute("language");
+
+  headingFirst.insertAdjacentHTML("afterbegin", data[attr].headingFirst);
+  headingSecond.insertAdjacentHTML("afterbegin", data[attr].headingSecond);
+  projectHeading.insertAdjacentHTML("afterbegin", data[attr].projectHeading);
+  footerHeading.insertAdjacentHTML("afterbegin", data[attr].footerHeading);
+  footerText.insertAdjacentHTML("afterbegin", data[attr].footerText);
+};
+
+const flagBtn = document.querySelector(".flag__btn");
+flagBtn.addEventListener("click", function () {
+  if (flagBtn.getAttribute("language") === "en") {
+    flagBtn.setAttribute("language", "cz");
+    replaceText();
+    flagSpan.classList.remove("fi", "fi-cz");
+    flagSpan.classList.add("fi", "fi-gb");
+  } else {
+    flagBtn.setAttribute("language", "en");
+    replaceText();
+    flagSpan.classList.remove("fi", "fi-gb");
+    flagSpan.classList.add("fi", "fi-cz");
+  }
 });

@@ -237,7 +237,7 @@ body {
 
 .toggle__btn {
     position: absolute;
-    top: 2rem;
+    top: 3rem;
     right: 2rem;
     display: block;
     width: 4rem;
@@ -272,4 +272,11 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1),
                 inset 0 4px 4px rgba(255, 255, 255, 1),
                 inset 0 -4px -4px rgba(255, 255, 255, 1);
+}
+
+.flag {
+    position: absolute;
+    top: 1rem;
+    right: 3.3rem;
+    display: block;
 }
