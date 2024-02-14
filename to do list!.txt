@@ -1,0 +1,6 @@
+- main heading color switching when hovering over the text and slow fading out when hovering out ✔ partly done
+- special cursor ✔ partly done
+- switching from dark to light mode ✔
+- switching from english to czech ✔
+- filtering projects by used languages
+- zoom effect on heading
