@@ -307,6 +307,10 @@ body {
         height: 1rem;
     }
 
+    .active {
+        left: 1rem;
+    }
+
     .flag {
         position: absolute;
         top: 1rem;
