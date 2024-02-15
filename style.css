@@ -278,3 +278,22 @@ body {
     right: 3.3rem;
     display: block;
 }
+
+@media screen and (max-width: 720px) {
+    .heading__main {
+        max-width: 30rem;
+        font-size: 2rem;
+    }
+
+    .project {
+        max-width: 25rem;
+    }
+
+    .footer__heading {
+        font-size: 2rem;
+    }
+
+    .footer__text {
+        font-size: 2rem;
+    }
+}
