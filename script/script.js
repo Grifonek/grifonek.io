@@ -4,16 +4,6 @@ import data from "./lang.js";
 // Circular cursor
 const cursor = document.querySelector(".cursor");
 
-document.querySelectorAll(".heading span").forEach((letter) => {
-  letter.addEventListener("mouseenter", function () {
-    this.classList.add("hovered"); // Add a class when hovered
-  });
-
-  letter.addEventListener("mouseleave", function () {
-    this.classList.remove("hovered"); // Remove the class when not hovered
-  });
-});
-
 document
   .querySelector(".heading__main")
   .addEventListener("mouseenter", function () {
@@ -130,6 +120,10 @@ const projectHeading = document.querySelector(".projects__text");
 const footerHeading = document.querySelector(".footer__heading");
 const footerText = document.querySelector(".footer__text");
 const flagSpan = document.querySelector(".flag__btn span");
+const projectName = document.querySelectorAll(".project-name");
+const projectDescription = document.querySelectorAll(".project-description");
+const futureLang = document.querySelector(".language");
+console.log(futureLang);
 
 // Replacing text
 const replaceText = function () {
@@ -138,14 +132,35 @@ const replaceText = function () {
   projectHeading.textContent = "";
   footerHeading.textContent = "";
   footerText.textContent = "";
+  futureLang.textContent = "";
 
   const attr = flagBtn.getAttribute("language");
+
+  const projectNames = data[attr].projectName;
+  const projectDescriptions = data[attr].projectDesc;
+
+  const projectKeys = Object.keys(projectNames);
+
+  for (let i = 0; i < projectKeys.length; i++) {
+    projectName[i].textContent = "";
+    projectDescription[i].textContent = "";
+
+    projectName[i].insertAdjacentHTML(
+      "afterbegin",
+      projectNames[projectKeys[i]]
+    );
+    projectDescription[i].insertAdjacentHTML(
+      "afterbegin",
+      projectDescriptions[projectKeys[i]]
+    );
+  }
 
   headingFirst.insertAdjacentHTML("afterbegin", data[attr].headingFirst);
   headingSecond.insertAdjacentHTML("afterbegin", data[attr].headingSecond);
   projectHeading.insertAdjacentHTML("afterbegin", data[attr].projectHeading);
   footerHeading.insertAdjacentHTML("afterbegin", data[attr].footerHeading);
   footerText.insertAdjacentHTML("afterbegin", data[attr].footerText);
+  futureLang.insertAdjacentHTML("afterbegin", data[attr].futureText);
 };
 
 const flagBtn = document.querySelector(".flag__btn");

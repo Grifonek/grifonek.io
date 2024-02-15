@@ -109,7 +109,15 @@ const data = {
         <span class="color-3">.</span>
     `,
     projectHeading: `Projekty`,
-    projectList: ``,
+    projectName: {
+      future: "Budoucí projekt!",
+      burgerLovers: "Burger Lovers",
+    },
+    projectDesc: {
+      future: "Již brzy...",
+      burgerLovers: "Stránka restaurace s burgery.",
+    },
+    futureText: "Úžasný",
     footerHeading: `Kontaktujte mě!`,
     footerText: `K dispozici pro Vás na:`,
   },
@@ -225,7 +233,15 @@ const data = {
     <span class="color-1">.</span>
     `,
     projectHeading: `Projects`,
-    projectList: ``,
+    projectName: {
+      future: "Future project!",
+      burgerLovers: "Burger Lovers",
+    },
+    projectDesc: {
+      future: "Coming soon...",
+      burgerLovers: "Burger restaurant webpage.",
+    },
+    futureText: "Awesome",
     footerHeading: `Contact me!`,
     footerText: `Available for you on:`,
   },
