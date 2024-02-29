@@ -6,6 +6,12 @@ const Items = [
     description: "Food page",
   },
   {
+    name: "Ultimate Barber Club",
+    link: "https://ultimatebarberclub.netlify.app/",
+    language: "<span>HTML</span><span>CSS</span><span>JavaScript</span>",
+    description: "Barber shop page",
+  },
+  {
     name: "Future project!",
     link: "#",
     language: "Awesome",
