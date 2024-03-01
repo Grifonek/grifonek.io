@@ -111,11 +111,15 @@ const data = {
     projectHeading: `Projekty`,
     projectName: {
       future: "Budoucí projekt!",
+      ultimateBarberClub: "Ultimate Barbers Club",
       burgerLovers: "Burger Lovers",
     },
     projectDesc: {
       future: "Již brzy...",
-      burgerLovers: "Stránka restaurace s burgery.",
+      ultimateBarberClub:
+        "Stránka barber shopu s kalendářem a objednávkovým systémem.",
+      burgerLovers:
+        "Stránka burger restaurace s menu, košíkem a objednávkovým systémem.",
     },
     futureText: "Úžasný",
     footerHeading: `Kontaktujte mě!`,
@@ -235,11 +239,15 @@ const data = {
     projectHeading: `Projects`,
     projectName: {
       future: "Future project!",
+      ultimateBarberClub: "Ultimate Barbers Club",
       burgerLovers: "Burger Lovers",
     },
     projectDesc: {
       future: "Coming soon...",
-      burgerLovers: "Burger restaurant webpage.",
+      ultimateBarberClub:
+        "Barber shop website with calendar and ordering system.",
+      burgerLovers:
+        "Burger restaurant website with menu, cart and ordering system.",
     },
     futureText: "Awesome",
     footerHeading: `Contact me!`,
