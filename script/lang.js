@@ -111,11 +111,14 @@ const data = {
     projectHeading: `Projekty`,
     projectName: {
       future: "Budoucí projekt!",
+      randomFilm: "Random Film",
       ultimateBarberClub: "Ultimate Barbers Club",
       burgerLovers: "Burger Lovers",
     },
     projectDesc: {
       future: "Již brzy...",
+      randomFilm:
+        "Stránka založená na generování náhodných filmů pomocí API databáze filmů.",
       ultimateBarberClub:
         "Stránka barber shopu s kalendářem a objednávkovým systémem.",
       burgerLovers:
@@ -239,11 +242,13 @@ const data = {
     projectHeading: `Projects`,
     projectName: {
       future: "Future project!",
+      randomFilm: "Random Film",
       ultimateBarberClub: "Ultimate Barbers Club",
       burgerLovers: "Burger Lovers",
     },
     projectDesc: {
       future: "Coming soon...",
+      randomFilm: "Film database API based website generating random films.",
       ultimateBarberClub:
         "Barber shop website with calendar and ordering system.",
       burgerLovers:

@@ -13,6 +13,12 @@ const Items = [
     description: "Barber shop website with calendar and ordering system.",
   },
   {
+    name: "Random Film",
+    link: "https://randomfilm.netlify.app/",
+    language: "<span>HTML</span><span>CSS</span><span>JavaScript</span>",
+    description: "Film database API based website generating random films.",
+  },
+  {
     name: "Future project!",
     link: "#",
     language: "Awesome",
