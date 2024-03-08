@@ -19,6 +19,12 @@ const Items = [
     description: "Film database API based website generating random films.",
   },
   {
+    name: "Monster Words Game",
+    link: "https://monsterwordsgame.netlify.app/",
+    language: "<span>HTML</span><span>CSS</span><span>JavaScript</span>",
+    description: "Small website game with difficulty levels.",
+  },
+  {
     name: "Future project!",
     link: "#",
     language: "Awesome",
